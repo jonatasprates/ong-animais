@@ -1,0 +1,40 @@
+#Desafio
+
+Desenvolvimento
+Para criação desse desafio foi desenvolvido uma aplicação utilizando linguagem PHP com frameworl Laravel 5.*.
+Banco de Dados Mysql, Docker e LaraDocker
+
+Programas recomendados: 
+
+1. Docker
+2. Git
+3. Editor ou IDE da sua prefêrencia para editar os códigos.
+
+Configurações para executar o Projeto 
+
+1. Fazer um clone do repoistório: git clone https://github.com/jonatasprates/Laravel-Framework.git
+2. Configurar o arquivo hosts da máquina, se estiver utilizando o Windows o arquivo está no diretório:C:\Windows\System32\drivers\etc, 
+abra-o e digite o seguinte comando: 127.0.0.1 dev.ong-animais e salvar.
+3. Baixar o Laradock neste link: https://www.dropbox.com/s/vqgribdenlm7b9t/laradock.rar?dl=0
+4. Vá para o diretório Laradock com o terminal.
+5. Para subir a aplicação com o docker é necessário estar dentro do diretório Laradock C:\LaraDock\, agora precisamos subir os serviços 
+do docker.
+6. Comando para funcionamento do Docker: docker-compose up -d mysql nginx. 
+7. Verifica se todos os containers estão funcionando corretamente com o comando docker ps, se tudo ocorreu bem irá aparecer 4 container
+em funcionamento.
+  7.1 Laradock_nginx
+  7.2 laradock_php_fpm
+  7.3 laradock_worspace
+  7.4 laradock_mysql
+8. Abra-o navegador e digite o hostname dev.ong-animais para acessar o projeto.
+9. Criando o banco de dados, Use um gerenciador de banco de dados da sua prefência, digite o comando: create database onganimais character set utf8mb4 collate utf8mb4_unicode_ci;
+10. Criando tabelas e usuário padrão da aplicação. Para fazer isso, com o terminal dentro do diretório C:\LaraDock\
+digite o seguinte comando: docker-compose exec workspace bash para podermos realizar as ações do php no projeto.
+11. Com o terminal vá para o diretorio do projeto ond-animais /var/www/ong-animais/
+12. Agora podemos realizar os comandos para criação das tabelas e do usuário padrão. Comando para criação das tabelas: php artisa migrate
+Comando para criar o usuário padrão php artisan db:seed.
+13. Acessar o painel administrativo com o usuário criado: usuario@usuario.com.br e senha 123456
+14. Projeto em execução.
+
+Dúvidas 
+Caso ocorrer alguma dúvida posso aprensenta-lo na empresa.
